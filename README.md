@@ -1,4 +1,4 @@
-# VirtualKeyboard
+# Virtual Keyboard
 
 This repo contains codes related to "Virtual Keyboard" which is a new Interface for Android devices. It is a glove such that you can wear it and interact with your smart phone by typing on a table.
 
