@@ -1,4 +1,5 @@
 # VirtualKeyboard
 
-This repo contains the code related to "Virtual Keyboard" which is a new Interface for Android devices. It is a glove such that you can wear it and interact with your smart phone by typing on a table.
+This repo contains codes related to "Virtual Keyboard" which is a new Interface for Android devices. It is a glove such that you can wear it and interact with your smart phone by typing on a table.
+
 For achieving this goal we only used the buit-in sensors of smart phone (camera and mic). We built a Convolutional Neural Network (CNN) on an Android device using Torch7 framework and Android NDK as our classifier. We attached different coins to every fingertip such that when a user hit his finger on the table it generates different sound. So whenever a user decides to type a key we get this sound data by microphone in the time domain and then we convert it to the frequency domain (by using FFT) and then we feed our CNN by it. After training, this classifier can detects 5 different fingers by 97% accuracy. After detecting that a keystroke is happened and finding the finger ID, we find the position of that finger by using camera. Finally, by using a KNN classifier we can find which key is supposed to be selected.
